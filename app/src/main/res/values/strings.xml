@@ -12,6 +12,8 @@
     <string name="extra_options">Please selection extras below</string>
     <string name="cheesy">Cheesy Crust</string>
     <string name="button">Confirm Order</string>
+    <string name="textview">TextView</string>
+    <string name="name">Order Confirmation</string>
 
     <string-array name="pizza_name">
         <item>Margereta</item>

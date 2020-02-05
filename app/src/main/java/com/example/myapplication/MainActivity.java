@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    public static final String EXTRA_MESSAGE = "finalOrder.MESSAGE";
     CheckBox ch;
     CheckBox ch1;
     CheckBox ch2;
@@ -78,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void onSwitchClicked(View view) {
         cheesyMsg = " ";
-        cheesyMsg = msg + " " + cheesyMsg;
 
         if (simpleSwitch.isChecked())
             cheesyMsg = cheesyMsg + simpleSwitch.getText().toString();
@@ -86,6 +87,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Toast.makeText(this, cheesyMsg + " is selected", Toast.LENGTH_LONG).show();
 
     }
+
+    public void onConfirmedClicked(View view) {
+        String finalOrder = text + " " + msg + " " + cheesyMsg;
+        Intent intent = new Intent(this, ConfirmationPage.class);
+        intent.putExtra(EXTRA_MESSAGE, finalOrder);
+        startActivity(intent);
+    }
+
 
 
 
