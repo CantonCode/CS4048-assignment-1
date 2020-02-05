@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="pizza_type">Pizza Type</string>
+
+    <string name="checkbox">Bacon</string>
+    <string name="checkbox1">Sweetcorn</string>
+    <string name="checkbox2">Spicy Chicken</string>
+    <string name="checkbox3">Olives</string>
+    <string name="checkbox4">Pineapple</string>
+    <string name="checkbox5">Cheese</string>
+
+    <string name="extra_options">Please selection extras below</string>
+    <string name="cheesy">Cheesy Crust</string>
+    <string name="button">Confirm Order</string>
+
     <string-array name="pizza_name">
         <item>Margereta</item>
         <item>Pepperoni</item>
