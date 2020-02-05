@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="pizza_type">Pizza Type</string>
+    <string-array name="pizza_name">
+        <item>Margereta</item>
+        <item>Pepperoni</item>
+        <item>Salami</item>
+        <item>All Meats</item>
+    </string-array>
 </resources>
